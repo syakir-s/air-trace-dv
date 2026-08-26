@@ -1,0 +1,113 @@
+source tilt_decoder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+PASS: acl_data=100000000000000 tilt_x=-16 tilt_y=  0
+PASS: acl_data=000010000000000 tilt_x=  0 tilt_y=  0
+PASS: acl_data=000100000000000 tilt_x=  2 tilt_y=  0
+PASS: acl_data=111110000000000 tilt_x=  0 tilt_y=  0
+PASS: acl_data=111100000000000 tilt_x= -2 tilt_y=  0
+PASS: acl_data=011110000000000 tilt_x= 15 tilt_y=  0
+PASS: acl_data=111100111100011 tilt_x= -2 tilt_y= 15
+PASS: acl_data=000100100001011 tilt_x=  2 tilt_y=  8
+PASS: acl_data=001101111010100 tilt_x=  6 tilt_y= -2
+PASS: acl_data=010111111110110 tilt_x= 11 tilt_y=  0
+PASS: acl_data=011000111000101 tilt_x= 12 tilt_y= 14
+PASS: acl_data=110001011000001 tilt_x= -8 tilt_y=-10
+PASS: acl_data=111100001000011 tilt_x= -2 tilt_y=  2
+PASS: acl_data=010101110101000 tilt_x= 10 tilt_y= -3
+PASS: acl_data=110101111001101 tilt_x= -6 tilt_y= -2
+PASS: acl_data=001010000010111 tilt_x=  5 tilt_y=  0
+PASS: acl_data=101101110011111 tilt_x=-10 tilt_y= -4
+PASS: acl_data=001110110010010 tilt_x=  7 tilt_y= 12
+PASS: acl_data=111011011011000 tilt_x= -3 tilt_y=-10
+PASS: acl_data=101001111100010 tilt_x=-12 tilt_y=  0
+PASS: acl_data=100100100111010 tilt_x=-14 tilt_y=  9
+PASS: acl_data=110001010100101 tilt_x= -8 tilt_y=-11
+PASS: acl_data=110011111111001 tilt_x= -7 tilt_y=  0
+PASS: acl_data=010010011011001 tilt_x=  9 tilt_y=  6
+PASS: acl_data=000000000110111 tilt_x=  0 tilt_y=  0
+PASS: acl_data=101111011010001 tilt_x= -9 tilt_y=-10
+PASS: acl_data=111100010111011 tilt_x= -2 tilt_y=  5
+PASS: acl_data=100100101110010 tilt_x=-14 tilt_y= 11
+PASS: acl_data=100000101110111 tilt_x=-16 tilt_y= 11
+PASS: acl_data=110000010110100 tilt_x= -8 tilt_y=  5
+PASS: acl_data=110111001001011 tilt_x= -5 tilt_y=-14
+PASS: acl_data=100000110101110 tilt_x=-16 tilt_y= 13
+PASS: acl_data=011111110000110 tilt_x= 15 tilt_y= -4
+PASS: acl_data=110011100000111 tilt_x= -7 tilt_y= -8
+PASS: acl_data=000101100100000 tilt_x=  2 tilt_y= -7
+PASS: acl_data=000000011111101 tilt_x=  0 tilt_y=  7
+PASS: acl_data=100011110111011 tilt_x=-15 tilt_y= -3
+PASS: acl_data=111100101101100 tilt_x= -2 tilt_y= 11
+PASS: acl_data=100001010101011 tilt_x=-16 tilt_y=-11
+PASS: acl_data=000011101000001 tilt_x=  0 tilt_y= -6
+PASS: acl_data=110000001110011 tilt_x= -8 tilt_y=  3
+PASS: acl_data=100110111001100 tilt_x=-13 tilt_y= 14
+PASS: acl_data=000100000111110 tilt_x=  2 tilt_y=  0
+PASS: acl_data=010100000101110 tilt_x= 10 tilt_y=  0
+PASS: acl_data=100011100111000 tilt_x=-15 tilt_y= -7
+PASS: acl_data=100101011101010 tilt_x=-14 tilt_y= -9
+PASS: acl_data=010111101110000 tilt_x= 11 tilt_y= -5
+PASS: acl_data=010011110101011 tilt_x=  9 tilt_y= -3
+PASS: acl_data=001100010110110 tilt_x=  6 tilt_y=  5
+PASS: acl_data=011011110101110 tilt_x= 13 tilt_y= -3
+PASS: acl_data=100111111011001 tilt_x=-13 tilt_y= -2
+PASS: acl_data=101111111101110 tilt_x= -9 tilt_y=  0
+PASS: acl_data=000001010011000 tilt_x=  0 tilt_y=-12
+PASS: acl_data=111111101001001 tilt_x=  0 tilt_y= -6
+PASS: acl_data=000011110011001 tilt_x=  0 tilt_y= -4
+PASS: acl_data=001101101001110 tilt_x=  6 tilt_y= -6
+PASS: acl_data=011011011111000 tilt_x= 13 tilt_y= -9
+PASS: acl_data=101011101110010 tilt_x=-11 tilt_y= -5
+PASS: acl_data=111101100111100 tilt_x= -2 tilt_y= -7
+PASS: acl_data=011100110010000 tilt_x= 14 tilt_y= 12
+PASS: acl_data=101011010111100 tilt_x=-11 tilt_y=-11
+PASS: acl_data=000001011010101 tilt_x=  0 tilt_y=-10
+PASS: acl_data=101010011011111 tilt_x=-11 tilt_y=  6
+PASS: acl_data=000110110110100 tilt_x=  3 tilt_y= 13
+PASS: acl_data=101101001001000 tilt_x=-10 tilt_y=-14
+PASS: acl_data=101000000011011 tilt_x=-12 tilt_y=  0
+PASS: acl_data=100011101000100 tilt_x=-15 tilt_y= -6
+PASS: acl_data=011000100000100 tilt_x= 12 tilt_y=  8
+PASS: acl_data=101001011110001 tilt_x=-12 tilt_y= -9
+PASS: acl_data=001110000100011 tilt_x=  7 tilt_y=  0
+PASS: acl_data=011111010111000 tilt_x= 15 tilt_y=-11
+PASS: acl_data=010110100111001 tilt_x= 11 tilt_y=  9
+PASS: acl_data=110110000111111 tilt_x= -5 tilt_y=  0
+PASS: acl_data=000010111111100 tilt_x=  0 tilt_y= 15
+PASS: acl_data=101111000111101 tilt_x= -9 tilt_y=-15
+PASS: acl_data=011111100110000 tilt_x= 15 tilt_y= -7
+PASS: acl_data=010001000100000 tilt_x=  8 tilt_y=-15
+PASS: acl_data=001110011110101 tilt_x=  7 tilt_y=  7
+PASS: acl_data=110110001101001 tilt_x= -5 tilt_y=  3
+PASS: acl_data=000111001011111 tilt_x=  3 tilt_y=-14
+PASS: acl_data=010001011110001 tilt_x=  8 tilt_y= -9
+PASS: acl_data=100101010100110 tilt_x=-14 tilt_y=-11
+PASS: acl_data=100110110001111 tilt_x=-13 tilt_y= 12
+PASS: acl_data=100010100010001 tilt_x=-15 tilt_y=  8
+PASS: acl_data=110011110011011 tilt_x= -7 tilt_y= -4
+PASS: acl_data=011100111111000 tilt_x= 14 tilt_y= 15
+PASS: acl_data=101001101110000 tilt_x=-12 tilt_y= -5
+PASS: acl_data=000101010001100 tilt_x=  2 tilt_y=-12
+PASS: acl_data=000010010011110 tilt_x=  0 tilt_y=  4
+PASS: acl_data=010000011111111 tilt_x=  8 tilt_y=  7
+PASS: acl_data=100111110011110 tilt_x=-13 tilt_y= -4
+PASS: acl_data=110110000111001 tilt_x= -5 tilt_y=  0
+PASS: acl_data=101101011110111 tilt_x=-10 tilt_y= -9
+PASS: acl_data=010001100001110 tilt_x=  8 tilt_y= -8
+PASS: acl_data=111011011000101 tilt_x= -3 tilt_y=-10
+PASS: acl_data=101111110010101 tilt_x= -9 tilt_y= -4
+PASS: acl_data=100010000001110 tilt_x=-15 tilt_y=  0
+PASS: acl_data=100011001100011 tilt_x=-15 tilt_y=-13
+PASS: acl_data=100101111001110 tilt_x=-14 tilt_y= -2
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tilt_decoder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 2391.086 ; gain = 0.000
