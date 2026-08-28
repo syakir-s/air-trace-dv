@@ -1,0 +1,20 @@
+source game_timer_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'game_timer_tb_behav' loaded.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2838.617 ; gain = 0.000
+run all
+PASS: seconds=  2
+PASS: seconds= 60
+PASS: timer_done=1
+PASS: seconds=  0
+PASS: seconds=  0
+Tests done.
+$finish called at time : 66076 ns : File "C:/Users/syaki/traceair/traceair.srcs/sim_1/new/game_timer_tb.sv" Line 91
