@@ -1,0 +1,24 @@
+source similarity_calc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'similarity_calc_tb_behav' loaded.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 3523.102 ; gain = 0.000
+run all
+PASS: out=  0
+PASS: out=100
+PASS: out= 50
+[144146000] TEST 3 (LEFT) done: score= 50
+Error: MISMATCH: got= 48 expected= 50
+Time: 192196 ns  Iteration: 0  Process: /similarity_calc_tb/check_score  Scope: similarity_calc_tb.check_score  File: C:/Users/syaki/traceair/traceair.srcs/sim_1/new/similarity_calc_tb.sv Line: 80
+[192196000] TEST 4 (SCRIBBLE) done: score= 48
+Error: MISMATCH: got= 95 expected=100
+Time: 240246 ns  Iteration: 0  Process: /similarity_calc_tb/check_score  Scope: similarity_calc_tb.check_score  File: C:/Users/syaki/traceair/traceair.srcs/sim_1/new/similarity_calc_tb.sv Line: 80
+Tests done.
+$finish called at time : 240246 ns : File "C:/Users/syaki/traceair/traceair.srcs/sim_1/new/similarity_calc_tb.sv" Line 160
