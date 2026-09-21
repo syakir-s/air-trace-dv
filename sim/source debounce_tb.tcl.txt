@@ -1,0 +1,25 @@
+source debounce_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'debounce_tb_behav' loaded.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1833.906 ; gain = 7.047
+run all
+PASS: btn_clean=1
+PASS: btn_clean=0
+PASS: btn_clean=0
+PASS: btn_clean=0
+PASS: btn_pulse fired on press
+PASS: btn_clean=1
+PASS: btn_clean=0
+PASS: btn_clean=1
+PASS: no pulse on release (press-only confirmed)
+PASS: btn_clean=0
+Tests done.
+$finish called at time : 18997 ns : File "C:/Users/syaki/traceair/traceair.srcs/sim_1/new/debounce_tb.sv" Line 101
