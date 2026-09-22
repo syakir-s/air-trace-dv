@@ -6,7 +6,7 @@ When start\_timer and stop\_timer are asserted on the same clock edge, the RTL r
 
 
 
-**Finding 2 - similarity\_calc: undercounts overlap at target row boundaries** 
+**Finding 2 - similarity\_calc: undercounts overlap at target row boundaries**
 
 
 
@@ -23,4 +23,10 @@ Key isolation: MODE\_SCRIBBLE (canvas = left half) and MODE\_MATCH (canvas = sam
 
 
 Status: Reproduced and localized to overlap undercount at target row boundaries (\~1 cell per boundary row). Root cause not yet confirmed — open question whether the misalignment is in the DUT's acc\_en/target\_d pipeline logic (real hardware bug) or in the testbench reactive driver's latency model (test artifact). Next step: waveform inspection at a single target-boundary row transition to compare canvas\_bit vs target\_d alignment
+
+
+**Finding 3 - game\_fsm: stimulus race on clock edge**
+
+
+Driving button inputs on the same instant as @(posedge clk) caused a race: the FSM sampled the old value and the pulse missed the edge, so the FSM never left IDLE. Diagnosed via waveform (pulse visibly fell between clock edges). Fixed by driving inputs just after the edge (#1 offset / pulse task) so they're stable when the DUT samples on the next edge.
 
