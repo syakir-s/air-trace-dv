@@ -1,0 +1,15 @@
+source accelerometer_spi_master_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'accelerometer_spi_master_tb_behav' loaded.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3507.293 ; gain = 0.000
+run all
+PASS: acl_data=1d03
+$finish called at time : 2 ms : File "C:/Users/syaki/traceair/traceair.srcs/sim_1/new/accelerometer_spi_master_tb.sv" Line 196
